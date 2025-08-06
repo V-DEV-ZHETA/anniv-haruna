@@ -359,6 +359,20 @@ function scrollToTop() {
     });
 }
 
+// Navigation function for confetti icon
+function navigateToCelebration() {
+    // Create confetti effect before navigation
+    createConfetti();
+    
+    // Show notification
+    showNotification('🎊 Navigating to surprise page...');
+    
+    // Navigate to the celebration page after a short delay
+    setTimeout(() => {
+        window.location.href = 'https://harunadancecover.netlify.app/';
+    }, 1000);
+}
+
 // Add CSS for animations
 const style = document.createElement('style');
 style.textContent = `
