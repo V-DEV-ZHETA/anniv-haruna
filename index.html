@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Happy Birthday Idol Community! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="birthday-cake">
+                <div class="cake">
+                    <div class="candle"></div>
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <p>Preparing the celebration...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="IMG_4494.PNG" alt="Haruna Dance Cover Logo" class="logo-image">
+                    <div class="logo-text">
+                        <span class="logo-main">Haruna Dance Cover</span>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#countdown">Countdown</a></li>
+                <li><a href="#celebration" class="celebration-link">🎉 Celebrate</a></li>
+            </ul>
+            <div class="nav-effects">
+                <div class="sparkle-effect"></div>
+                <div class="glow-effect"></div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="floating-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="confetti"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Happy Anniversay</span>
+                <span class="title-line highlight">Haruna Dance Cover!</span>
+            </h1>
+            <p class="hero-subtitle">Celebrating another year of amazing memories, friendship, and fandom love</p>
+            <button class="cta-button" onclick="startCelebration()">
+                <span>Start Celebration</span>
+                <i class="fas fa-party-horn"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="countdown-section">
+        <div class="container">
+            <h2 class="section-title">Countdown to the Big Day!</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span id="days" class="count-number">00</span>
+                    <span class="count-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="count-number">00</span>
+                    <span class="count-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="count-number">00</span>
+                    <span class="count-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="count-number">00</span>
+                    <span class="count-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Memory Haruna!!</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-year="2023">
+                    <img src="Haruna-1.jpg" alt="Concert 2023">
+                    <div class="gallery-overlay">
+                        <h3>Haruna</h3>
+                        <p>Haruna Bagi Bagi Handbanner</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-year="2023">
+                    <img src="Haruna-2.jpg" alt="Fan Meeting">
+                    <div class="gallery-overlay">
+                        <h3>Haruna</h3>
+                        <p>Haruna Habis Tampil!!</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-year="2024">
+                    <img src="Haruna-3.jpg" alt="Birthday Event">
+                    <div class="gallery-overlay">
+                        <h3>Haruna - Arcadia Clash</h3>
+                        <p>Haruna Perform Di Event Popcon!!</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-year="2024">
+                    <img src="Haruna-4.jpg" alt="Community">
+                    <div class="gallery-overlay">
+                        <h3>Haruna - Arcadia Clash</h3>
+                        <p>Haruna Perform Di Event Popcon!!</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-year="2023">
+                    <img src="Haruna-9.jpg" alt="Concert 2023">
+                    <div class="gallery-overlay">
+                        <h3>Haruna - Arcadia Clash</h3>
+                        <p>Haruna Perform Di Event Popcon!!</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-year="2023">
+                    <img src="Haruna-13.jpg" alt="Fan Meeting">
+                    <div class="gallery-overlay">
+                        <h3>Haruna - BTS</h3>
+                        <p>Haruna Lagi Syuting Mv Nich!</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-year="2024">
+                    <img src="Haruna-15.jpg" alt="Birthday Event">
+                    <div class="gallery-overlay">
+                        <h3>Haruna - BTS</h3>
+                        <p>Haruna Lagi Syuting Mv Nich!</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-year="2024">
+                    <img src="Haruna-18.jpg" alt="Community">
+                    <div class="gallery-overlay">
+                        <h3>Haruna - BTS</h3>
+                        <p>Haruna Lagi Syuting Mv Nich!</p>
+                    </div>
+            </div>
+            <div class="gallery-item" data-year="2024">
+                    <img src="Haruna-11.jpg" alt="Community">
+                    <div class="gallery-overlay">
+                        <h3>Haruna - BTS</h3>
+                        <p>Soswitt Bangett siii...</p>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Messages Section -->
+    <section id="messages" class="messages-section">
+        <div class="container">
+            <h2 class="section-title">Birthday Messages</h2>
+            <div class="messages-container">
+                <div class="message-card">
+                    <div class="message-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="message-content">
+                        <h4>Zheta</h4>
+                        <p>Selamat ulang tahun Haruna!! Terima kasih telah selalu menjadi yang terbaik buat para penggemar. Semoga cinta dan dukungan kami semua terus menyemangati Haruna! 💜</p>
+                        <span class="message-time">2 hours ago</span>
+                    </div>
+                </div>
+                <div class="message-card">
+                    <div class="message-avatar">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="message-content">
+                        <h4>Dedott</h4>
+                        <p>Hepi Hepi Hepi Hepi Anniv Harunaa!!!  🎉</p>
+                        <span class="message-time">1 hour ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Message Form -->
+            <div class="add-message">
+                <h3>Leave Your Birthday Wish!</h3>
+                <form id="message-form">
+                    <input type="text" id="name-input" placeholder="Your name" required>
+                    <textarea id="message-input" placeholder="Write your birthday message..." required></textarea>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Wish
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Elements -->
+    <div class="interactive-elements">
+        <button class="floating-btn" onclick="toggleMusic()" title="Toggle Music">
+            <i class="fas fa-music"></i>
+        </button>
+        <button class="floating-btn confetti-btn" onclick="createConfetti()" title="Throw Confetti">
+            <a href="https://harunadancecover.netlify.app/"></a>
+            <i class="fas fa-gift"></i>
+        </button>
+    </div>
+
+    <!-- Floating Stars Background -->
+    <div class="floating-stars" id="floating-stars"></div>
+
+    <!-- Celebration Section -->
+    <section id="celebration" class="celebration-section">
+        <div class="container">
+            <h2 class="section-title">🎉 Let's Celebrate! 🎂</h2>
+            <div class="celebration-grid">
+                <div class="celebration-card">
+                    <i class="fas fa-birthday-cake celebration-icon"></i>
+                    <h3>Virtual Cake</h3>
+                    <p>Click to light up the birthday cake!</p>
+                    <button class="celebration-btn" onclick="lightCake()">
+                        Light Candle
+                    </button>
+                </div>
+                <div class="celebration-card">
+                    <i class="fas fa-bahai celebration-icon"></i>
+                    <h3>Fireworks</h3>
+                    <p>Launch spectacular fireworks!</p>
+                    <button class="celebration-btn" onclick="launchFireworks()">
+                        Launch
+                    </button>
+                </div>
+                <div class="celebration-card">
+                    <i class="fas fa-magic celebration-icon"></i>
+                    <h3>Magic Effects</h3>
+                    <p>Add magical sparkles everywhere!</p>
+                    <button class="celebration-btn" onclick="addMagic()">
+                        Cast Magic
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">`
+        <div class="container">
+            <p>&copy; 2024 Idol Community Birthday Celebration. Made with <i class="fas fa-heart"></i> by fans, for fans.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio -->
+    <audio id="birthday-music" loop>
+        <source src="Namida Surprise! (Air Mata Surprise!) - JKT48.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+    <script src="celebration.js"></script>
+</body>
+</html>
